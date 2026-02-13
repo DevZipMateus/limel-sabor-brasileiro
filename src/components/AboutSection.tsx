@@ -1,4 +1,5 @@
 import { Eye, Target, Heart } from "lucide-react";
+import aboutBg from "@/assets/about-bg.jpg";
 
 const values = [
   { icon: "🏆", title: "Qualidade acima de tudo", text: "Matérias-primas selecionadas e controle rigoroso na produção." },
@@ -10,8 +11,13 @@ const values = [
 
 const AboutSection = () => {
   return (
-    <section id="sobre" className="py-20 bg-section-gradient">
-      <div className="container mx-auto px-4">
+    <section
+      id="sobre"
+      className="relative py-20"
+      style={{ backgroundImage: `url(${aboutBg})`, backgroundSize: "cover", backgroundPosition: "center" }}
+    >
+      <div className="absolute inset-0 bg-white/90" />
+      <div className="container mx-auto px-4 relative z-10">
         <h2 className="text-3xl md:text-4xl font-display font-bold text-center mb-4 text-foreground">
           Nossa história
         </h2>

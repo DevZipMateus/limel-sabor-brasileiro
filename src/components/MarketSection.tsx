@@ -1,4 +1,5 @@
 import { Store, ShoppingBag, Coffee, UtensilsCrossed, Users, Building } from "lucide-react";
+import marketBg from "@/assets/market-bg.jpg";
 
 const partners = [
   { icon: Store, label: "Mercearias e mercadinhos" },
@@ -11,10 +12,15 @@ const partners = [
 
 const MarketSection = () => {
   return (
-    <section id="mercado" className="py-20 bg-primary text-primary-foreground">
-      <div className="container mx-auto px-4">
+    <section
+      id="mercado"
+      className="relative py-20"
+      style={{ backgroundImage: `url(${marketBg})`, backgroundSize: "cover", backgroundPosition: "center" }}
+    >
+      <div className="absolute inset-0 bg-primary/85" />
+      <div className="container mx-auto px-4 relative z-10">
         <div className="text-center mb-12">
-          <h2 className="text-3xl md:text-4xl font-display font-bold mb-3">
+          <h2 className="text-3xl md:text-4xl font-display font-bold mb-3 text-primary-foreground">
             Para quem vendemos
           </h2>
           <p className="text-primary-foreground/80 max-w-xl mx-auto">
