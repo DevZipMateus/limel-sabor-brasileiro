@@ -1,4 +1,4 @@
-import { IceCreamCone } from "lucide-react";
+import { IceCreamCone, ShoppingBag } from "lucide-react";
 import productsBg from "@/assets/products-bg.jpg";
 import acaiBowl from "@/assets/acai-bowl.jpg";
 import popsicles from "@/assets/popsicles.jpg";
@@ -63,7 +63,27 @@ const ProductsSection = () => {
           />
         </div>
 
-        <div className="mt-12 text-center">
+        <div className="mt-12 bg-white border border-border rounded-2xl p-8 md:p-10 flex flex-col md:flex-row items-center gap-6 shadow-lg">
+          <div className="flex-shrink-0 w-16 h-16 rounded-full bg-secondary/10 flex items-center justify-center">
+            <ShoppingBag className="w-8 h-8 text-secondary" />
+          </div>
+          <div className="flex-1 text-center md:text-left">
+            <h3 className="text-xl font-display font-bold text-black mb-2">
+              Confira nossa vitrine completa
+            </h3>
+            <p className="text-black/70 text-sm">
+              Veja todos os nossos produtos com fotos, descrições e preços. Encontre o sorvete perfeito para o seu negócio ou para a sua família.
+            </p>
+          </div>
+          <a
+            href="/vitrine"
+            className="inline-block bg-secondary text-secondary-foreground px-8 py-3.5 rounded-full font-bold hover:opacity-90 transition-opacity shadow-lg whitespace-nowrap"
+          >
+            🛒 Ver vitrine
+          </a>
+        </div>
+
+        <div className="mt-8 text-center">
           <a
             href="https://wa.me/5511965328237?text=Olá! Gostaria de saber mais sobre os produtos da Sorvetes Limel."
             target="_blank"
