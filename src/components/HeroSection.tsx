@@ -10,6 +10,7 @@ const HeroSection = () => {
         backgroundImage: `url(${heroBg})`,
         backgroundSize: "cover",
         backgroundPosition: "center",
+        backgroundAttachment: "fixed",
       }}
     >
       <div className="absolute inset-0 bg-hero-overlay" />
