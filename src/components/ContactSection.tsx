@@ -1,9 +1,15 @@
 import { Phone, Mail, MapPin, Clock } from "lucide-react";
+import contactBg from "@/assets/contact-bg.jpg";
 
 const ContactSection = () => {
   return (
-    <section id="contato" className="py-20 bg-section-gradient">
-      <div className="container mx-auto px-4">
+    <section
+      id="contato"
+      className="relative py-20"
+      style={{ backgroundImage: `url(${contactBg})`, backgroundSize: "cover", backgroundPosition: "center" }}
+    >
+      <div className="absolute inset-0 bg-white/90" />
+      <div className="container mx-auto px-4 relative z-10">
         <div className="text-center mb-12">
           <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground mb-3">
             Entre em contato

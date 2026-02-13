@@ -1,4 +1,5 @@
 import { IceCreamCone } from "lucide-react";
+import productsBg from "@/assets/products-bg.jpg";
 
 const products = [
   { name: "Copão", desc: "Porção generosa para momentos especiais", icon: "🍨" },
@@ -13,8 +14,13 @@ const products = [
 
 const ProductsSection = () => {
   return (
-    <section id="produtos" className="py-20 bg-background">
-      <div className="container mx-auto px-4">
+    <section
+      id="produtos"
+      className="relative py-20"
+      style={{ backgroundImage: `url(${productsBg})`, backgroundSize: "cover", backgroundPosition: "center" }}
+    >
+      <div className="absolute inset-0 bg-white/90" />
+      <div className="container mx-auto px-4 relative z-10">
         <div className="text-center mb-12">
           <div className="inline-flex items-center gap-2 bg-primary/10 text-primary px-4 py-1.5 rounded-full text-sm font-semibold mb-4">
             <IceCreamCone className="w-4 h-4" />
