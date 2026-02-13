@@ -22,13 +22,13 @@ const HeroSection = () => {
               className="w-16 h-16 sm:w-20 sm:h-20 md:w-32 md:h-32 object-contain"
             />
           </div>
-          <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-display font-extrabold text-white mb-3 md:mb-4 leading-tight animate-fade-up" style={{ animationDelay: "0.2s", opacity: 0 }}>
+          <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-display font-extrabold text-white mb-3 md:mb-4 leading-tight animate-fade-up" style={{ animationDelay: "0.2s" }}>
             Sorvetes Limel
           </h1>
-          <h2 className="text-base sm:text-lg md:text-xl text-white/90 font-body mb-6 md:mb-8 leading-relaxed max-w-lg animate-fade-up" style={{ animationDelay: "0.4s", opacity: 0 }}>
+          <h2 className="text-base sm:text-lg md:text-xl text-white/90 font-body mb-6 md:mb-8 leading-relaxed max-w-lg animate-fade-up" style={{ animationDelay: "0.4s" }}>
             Sabor artesanal, qualidade de fábrica. Sorvetes e açaí que conquistam paladares e geram lucro para o seu negócio.
           </h2>
-          <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 animate-fade-up" style={{ animationDelay: "0.6s", opacity: 0 }}>
+          <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 animate-fade-up" style={{ animationDelay: "0.6s" }}>
             <a
               href="https://wa.me/5511965328237"
               target="_blank"
