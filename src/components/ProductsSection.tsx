@@ -2,6 +2,7 @@ import { IceCreamCone, ShoppingBag } from "lucide-react";
 import productsBg from "@/assets/products-bg.jpg";
 import acaiBowl from "@/assets/acai-bowl.jpg";
 import popsicles from "@/assets/popsicles.jpg";
+
 const products = [
   { name: "Copão", desc: "Porção generosa para momentos especiais", icon: "🍨" },
   { name: "Copinhos", desc: "Porção individual prática e saborosa", icon: "🥤" },
@@ -17,78 +18,78 @@ const ProductsSection = () => {
   return (
     <section
       id="produtos"
-      className="relative py-20"
-      style={{ backgroundImage: `url(${productsBg})`, backgroundSize: "cover", backgroundPosition: "center", backgroundAttachment: "fixed" }}
+      className="relative py-12 sm:py-16 md:py-20"
+      style={{ backgroundImage: `url(${productsBg})`, backgroundSize: "cover", backgroundPosition: "center" }}
     >
       <div className="absolute inset-0 bg-white/90" />
-      <div className="container mx-auto px-4 relative z-10">
-        <div className="text-center mb-12">
-          <div className="inline-flex items-center gap-2 bg-primary/10 text-primary px-4 py-1.5 rounded-full text-sm font-semibold mb-4">
+      <div className="container mx-auto px-5 sm:px-6 relative z-10">
+        <div className="text-center mb-8 md:mb-12">
+          <div className="inline-flex items-center gap-2 bg-primary/10 text-primary px-4 py-1.5 rounded-full text-xs sm:text-sm font-semibold mb-3 md:mb-4">
             <IceCreamCone className="w-4 h-4" />
             Nossos produtos
           </div>
-          <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground mb-3">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl font-display font-bold text-foreground mb-2 sm:mb-3">
             Sorvetes e açaí para todos os gostos
           </h2>
-          <p className="text-muted-foreground max-w-xl mx-auto">
+          <p className="text-muted-foreground max-w-xl mx-auto text-sm sm:text-base">
             Produção própria com ingredientes selecionados. Variedade que gera giro rápido e lucro para o seu negócio.
           </p>
         </div>
 
-        <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-5">
+        <div className="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-4 gap-3 sm:gap-5">
           {products.map((p) => (
             <div
               key={p.name}
-              className="group bg-white border border-border rounded-2xl p-6 hover:border-primary/40 hover:shadow-xl transition-all duration-300"
+              className="group bg-white border border-border rounded-2xl p-4 sm:p-6 hover:border-primary/40 hover:shadow-xl transition-all duration-300"
             >
-              <div className="text-4xl mb-4 group-hover:scale-110 transition-transform duration-300">
+              <div className="text-3xl sm:text-4xl mb-3 sm:mb-4 group-hover:scale-110 transition-transform duration-300">
                 {p.icon}
               </div>
-              <h3 className="font-display font-bold text-black text-lg mb-1">{p.name}</h3>
-              <p className="text-sm text-black/70">{p.desc}</p>
+              <h3 className="font-display font-bold text-foreground text-sm sm:text-lg mb-1">{p.name}</h3>
+              <p className="text-xs sm:text-sm text-muted-foreground">{p.desc}</p>
             </div>
           ))}
         </div>
 
-        <div className="grid md:grid-cols-2 gap-6 mt-10">
+        <div className="grid sm:grid-cols-2 gap-4 sm:gap-6 mt-8 md:mt-10">
           <img
             src={acaiBowl}
             alt="Açaí bowl com granola e frutas"
-            className="w-full h-56 object-cover rounded-2xl shadow-lg border border-border"
+            className="w-full h-40 sm:h-48 md:h-56 object-cover rounded-2xl shadow-lg border border-border"
           />
           <img
             src={popsicles}
             alt="Picolés coloridos no gelo"
-            className="w-full h-56 object-cover rounded-2xl shadow-lg border border-border"
+            className="w-full h-40 sm:h-48 md:h-56 object-cover rounded-2xl shadow-lg border border-border"
           />
         </div>
 
-        <div className="mt-12 bg-white border border-border rounded-2xl p-8 md:p-10 flex flex-col md:flex-row items-center gap-6 shadow-lg">
-          <div className="flex-shrink-0 w-16 h-16 rounded-full bg-secondary/10 flex items-center justify-center">
-            <ShoppingBag className="w-8 h-8 text-secondary" />
+        <div className="mt-8 md:mt-12 bg-white border border-border rounded-2xl p-6 sm:p-8 md:p-10 flex flex-col md:flex-row items-center gap-4 sm:gap-6 shadow-lg">
+          <div className="flex-shrink-0 w-14 h-14 sm:w-16 sm:h-16 rounded-full bg-secondary/10 flex items-center justify-center">
+            <ShoppingBag className="w-7 h-7 sm:w-8 sm:h-8 text-secondary" />
           </div>
           <div className="flex-1 text-center md:text-left">
-            <h3 className="text-xl font-display font-bold text-black mb-2">
+            <h3 className="text-lg sm:text-xl font-display font-bold text-foreground mb-1 sm:mb-2">
               Confira nossa vitrine completa
             </h3>
-            <p className="text-black/70 text-sm">
+            <p className="text-muted-foreground text-xs sm:text-sm">
               Veja todos os nossos produtos com fotos, descrições e preços. Encontre o sorvete perfeito para o seu negócio ou para a sua família.
             </p>
           </div>
           <a
             href="/vitrine"
-            className="inline-block bg-secondary text-secondary-foreground px-8 py-3.5 rounded-full font-bold hover:opacity-90 transition-opacity shadow-lg whitespace-nowrap"
+            className="inline-block bg-secondary text-secondary-foreground px-6 sm:px-8 py-3 sm:py-3.5 rounded-full font-bold text-sm hover:opacity-90 transition-opacity shadow-lg whitespace-nowrap"
           >
             🛒 Ver vitrine
           </a>
         </div>
 
-        <div className="mt-8 text-center">
+        <div className="mt-6 md:mt-8 text-center">
           <a
             href="https://wa.me/5511965328237?text=Olá! Gostaria de saber mais sobre os produtos da Sorvetes Limel."
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-block bg-primary text-primary-foreground px-8 py-3.5 rounded-full font-bold hover:opacity-90 transition-opacity shadow-lg"
+            className="inline-block bg-primary text-primary-foreground px-6 sm:px-8 py-3 sm:py-3.5 rounded-full font-bold text-sm sm:text-base hover:opacity-90 transition-opacity shadow-lg"
           >
             Solicitar catálogo completo
           </a>
