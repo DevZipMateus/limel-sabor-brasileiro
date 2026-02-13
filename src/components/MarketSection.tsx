@@ -1,5 +1,6 @@
 import { Store, ShoppingBag, Coffee, UtensilsCrossed, Users, Building } from "lucide-react";
 import marketBg from "@/assets/market-bg.jpg";
+import deliveryImg from "@/assets/delivery.jpg";
 
 const partners = [
   { icon: Store, label: "Mercearias e mercadinhos" },
@@ -42,21 +43,28 @@ const MarketSection = () => {
           ))}
         </div>
 
-        <div className="bg-white rounded-2xl p-8 md:p-10 border border-border text-center max-w-3xl mx-auto">
-          <h3 className="text-2xl font-display font-bold mb-3 text-black">
-            Seja um parceiro Limel
-          </h3>
-          <p className="text-black/70 mb-6">
-            Mais do que um fornecedor, buscamos ser um parceiro estratégico de crescimento para o seu negócio. Produtos com boa margem de lucro e demanda constante durante o ano todo.
-          </p>
-          <a
-            href="https://wa.me/5511965328237?text=Olá! Tenho interesse em ser parceiro da Sorvetes Limel."
-            target="_blank"
-            rel="noopener noreferrer"
-            className="inline-block bg-secondary text-secondary-foreground px-8 py-3.5 rounded-full font-bold hover:opacity-90 transition-opacity shadow-lg"
-          >
-            Quero ser parceiro
-          </a>
+        <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+          <img
+            src={deliveryImg}
+            alt="Entrega de sorvetes Limel"
+            className="w-full h-full object-cover rounded-2xl shadow-lg border border-border min-h-[250px]"
+          />
+          <div className="bg-white rounded-2xl p-8 md:p-10 border border-border text-center flex flex-col justify-center">
+            <h3 className="text-2xl font-display font-bold mb-3 text-black">
+              Seja um parceiro Limel
+            </h3>
+            <p className="text-black/70 mb-6">
+              Mais do que um fornecedor, buscamos ser um parceiro estratégico de crescimento para o seu negócio. Produtos com boa margem de lucro e demanda constante durante o ano todo.
+            </p>
+            <a
+              href="https://wa.me/5511965328237?text=Olá! Tenho interesse em ser parceiro da Sorvetes Limel."
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-block bg-secondary text-secondary-foreground px-8 py-3.5 rounded-full font-bold hover:opacity-90 transition-opacity shadow-lg"
+            >
+              Quero ser parceiro
+            </a>
+          </div>
         </div>
       </div>
     </section>

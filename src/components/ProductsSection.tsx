@@ -1,6 +1,7 @@
 import { IceCreamCone } from "lucide-react";
 import productsBg from "@/assets/products-bg.jpg";
-
+import acaiBowl from "@/assets/acai-bowl.jpg";
+import popsicles from "@/assets/popsicles.jpg";
 const products = [
   { name: "Copão", desc: "Porção generosa para momentos especiais", icon: "🍨" },
   { name: "Copinhos", desc: "Porção individual prática e saborosa", icon: "🥤" },
@@ -47,6 +48,19 @@ const ProductsSection = () => {
               <p className="text-sm text-black/70">{p.desc}</p>
             </div>
           ))}
+        </div>
+
+        <div className="grid md:grid-cols-2 gap-6 mt-10">
+          <img
+            src={acaiBowl}
+            alt="Açaí bowl com granola e frutas"
+            className="w-full h-56 object-cover rounded-2xl shadow-lg border border-border"
+          />
+          <img
+            src={popsicles}
+            alt="Picolés coloridos no gelo"
+            className="w-full h-56 object-cover rounded-2xl shadow-lg border border-border"
+          />
         </div>
 
         <div className="mt-12 text-center">

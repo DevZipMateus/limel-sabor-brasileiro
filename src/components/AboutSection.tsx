@@ -1,5 +1,6 @@
 import { Eye, Target, Heart } from "lucide-react";
 import aboutBg from "@/assets/about-bg.jpg";
+import aboutImg from "@/assets/about-img.jpg";
 
 const values = [
   { icon: "🏆", title: "Qualidade acima de tudo", text: "Matérias-primas selecionadas e controle rigoroso na produção." },
@@ -26,13 +27,20 @@ const AboutSection = () => {
         </p>
 
         <div className="grid md:grid-cols-2 gap-12 mb-20">
-          <div className="space-y-4 text-muted-foreground leading-relaxed">
-            <p>
-              A empresa teve início como uma pequena produção artesanal, conduzida pelo pai da família, atendendo poucos clientes e produzindo de forma simples. Com o passar do tempo, o negócio foi assumido pela nova geração, que decidiu investir, modernizar e transformar a produção em uma fábrica estruturada.
-            </p>
-            <p>
-              A produção foi sendo padronizada, novos sabores foram desenvolvidos e surgiram parcerias com comerciantes da região. Aos poucos, a marca passou a ser reconhecida não apenas pelo preço acessível, mas principalmente pela confiança e regularidade na entrega.
-            </p>
+          <div className="space-y-4">
+            <img
+              src={aboutImg}
+              alt="Produção artesanal de sorvetes Limel"
+              className="w-full h-64 object-cover rounded-2xl shadow-lg border border-border mb-4"
+            />
+            <div className="text-muted-foreground leading-relaxed space-y-4">
+              <p>
+                A empresa teve início como uma pequena produção artesanal, conduzida pelo pai da família, atendendo poucos clientes e produzindo de forma simples. Com o passar do tempo, o negócio foi assumido pela nova geração, que decidiu investir, modernizar e transformar a produção em uma fábrica estruturada.
+              </p>
+              <p>
+                A produção foi sendo padronizada, novos sabores foram desenvolvidos e surgiram parcerias com comerciantes da região. Aos poucos, a marca passou a ser reconhecida não apenas pelo preço acessível, mas principalmente pela confiança e regularidade na entrega.
+              </p>
+            </div>
           </div>
           <div className="space-y-6">
             <div className="flex items-start gap-4 p-5 rounded-xl bg-card border border-border">
