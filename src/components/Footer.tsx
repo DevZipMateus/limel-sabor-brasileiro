@@ -6,7 +6,9 @@ const Footer = () => {
       <div className="container mx-auto px-4">
         <div className="grid md:grid-cols-3 gap-8 mb-8">
           <div>
-            <img src={logo} alt="Logo Sorvetes Limel" className="h-16 w-auto mb-4" />
+            <div className="w-20 h-20 rounded-full bg-white flex items-center justify-center shadow-lg mb-4">
+              <img src={logo} alt="Logo Sorvetes Limel" className="h-16 w-16 object-contain" />
+            </div>
             <p className="text-background/70 text-sm leading-relaxed">
               Sorvetes e açaí artesanais com qualidade, sabor e preço justo para famílias, comerciantes e parceiros.
             </p>
