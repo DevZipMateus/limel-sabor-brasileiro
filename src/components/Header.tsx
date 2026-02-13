@@ -46,10 +46,10 @@ const Header = () => {
       <div className="container mx-auto px-4 sm:px-6 flex items-center justify-between h-14 sm:h-16 md:h-20">
         <a
           href="/"
-          onClick={(e) => {e.preventDefault();if(location.pathname==="/"){window.scrollTo({top:0,behavior:"smooth"});}else{navigate("/");}}}
+          onClick={(e) => {e.preventDefault();if (location.pathname === "/") {window.scrollTo({ top: 0, behavior: "smooth" });} else {navigate("/");}}}
           className="flex items-center gap-2">
 
-          <img src={logo} alt="Logo Sorvetes Limel" className="h-10 sm:h-12 md:h-14 w-auto" />
+          <img src={logo} alt="Logo Sorvetes Limel" className="h-20 sm:h-12 md:h-14 w-auto" />
         </a>
 
         <nav className="hidden md:flex items-center gap-4 lg:gap-8">
