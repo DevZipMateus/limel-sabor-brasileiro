@@ -39,6 +39,12 @@ const HeroSection = () => {
               Peça agora pelo WhatsApp
             </a>
             <a
+              href="/vitrine"
+              className="bg-white/15 text-white border border-white/50 px-8 py-3.5 rounded-full font-semibold text-base hover:bg-white/25 hover:border-white/70 transition-all text-center backdrop-blur-sm"
+            >
+              🛒 Ver vitrine de produtos
+            </a>
+            <a
               href="#produtos"
               className="bg-white/15 text-white border border-white/50 px-8 py-3.5 rounded-full font-semibold text-base hover:bg-white/25 hover:border-white/70 transition-all text-center backdrop-blur-sm"
             >
