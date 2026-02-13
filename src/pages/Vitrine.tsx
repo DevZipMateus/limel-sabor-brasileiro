@@ -11,13 +11,12 @@ const Vitrine = () => {
   }, []);
 
   return (
-    <div className="h-screen w-full overflow-hidden flex flex-col pt-20">
+    <div className="h-screen w-full overflow-hidden flex flex-col pt-14 sm:pt-16 md:pt-20">
       <Header />
       <iframe
         src="https://limel.egestor.com.br/vitrine/"
         title="Demonstração de Vitrine"
         className="w-full flex-1 border-none"
-        style={{ height: "calc(100vh - 80px - 63px)" }}
         allowFullScreen
       />
     </div>
