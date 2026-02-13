@@ -15,11 +15,13 @@ const HeroSection = () => {
       <div className="absolute inset-0 bg-hero-overlay" />
       <div className="container mx-auto px-4 relative z-10">
         <div className="max-w-2xl">
-          <img
-            src={logo}
-            alt="Logo Sorvetes Limel"
-            className="w-28 h-28 md:w-36 md:h-36 mb-6 drop-shadow-2xl"
-          />
+          <div className="w-28 h-28 md:w-36 md:h-36 mb-6 rounded-full bg-white flex items-center justify-center shadow-2xl">
+            <img
+              src={logo}
+              alt="Logo Sorvetes Limel"
+              className="w-24 h-24 md:w-32 md:h-32 object-contain"
+            />
+          </div>
           <h1 className="text-4xl md:text-6xl lg:text-7xl font-display font-extrabold text-white mb-4 leading-tight">
             Sorvetes Limel
           </h1>
