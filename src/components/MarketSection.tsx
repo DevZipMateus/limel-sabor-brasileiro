@@ -26,12 +26,12 @@ const MarketSection = () => {
           {partners.map((p) => (
             <div
               key={p.label}
-              className="flex items-center gap-4 bg-primary-foreground/10 backdrop-blur-sm rounded-xl p-5 border border-primary-foreground/20 hover:bg-primary-foreground/15 transition-colors"
+              className="flex items-center gap-4 bg-white rounded-xl p-5 border border-border hover:shadow-lg transition-all"
             >
-              <div className="flex-shrink-0 w-11 h-11 rounded-full bg-primary-foreground/20 flex items-center justify-center">
-                <p.icon className="w-5 h-5" />
+              <div className="flex-shrink-0 w-11 h-11 rounded-full bg-primary/20 flex items-center justify-center">
+                <p.icon className="w-5 h-5 text-primary" />
               </div>
-              <span className="font-semibold">{p.label}</span>
+              <span className="font-semibold text-black">{p.label}</span>
             </div>
           ))}
         </div>
