@@ -32,13 +32,13 @@ const ProductsSection = () => {
           {products.map((p) => (
             <div
               key={p.name}
-              className="group bg-card border border-border rounded-2xl p-6 hover:border-primary/40 hover:shadow-xl transition-all duration-300"
+              className="group bg-white border border-border rounded-2xl p-6 hover:border-primary/40 hover:shadow-xl transition-all duration-300"
             >
               <div className="text-4xl mb-4 group-hover:scale-110 transition-transform duration-300">
                 {p.icon}
               </div>
-              <h3 className="font-display font-bold text-foreground text-lg mb-1">{p.name}</h3>
-              <p className="text-sm text-muted-foreground">{p.desc}</p>
+              <h3 className="font-display font-bold text-black text-lg mb-1">{p.name}</h3>
+              <p className="text-sm text-black/70">{p.desc}</p>
             </div>
           ))}
         </div>
