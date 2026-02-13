@@ -36,11 +36,11 @@ const MarketSection = () => {
           ))}
         </div>
 
-        <div className="bg-primary-foreground/10 backdrop-blur-sm rounded-2xl p-8 md:p-10 border border-primary-foreground/20 text-center max-w-3xl mx-auto">
-          <h3 className="text-2xl font-display font-bold mb-3">
+        <div className="bg-white rounded-2xl p-8 md:p-10 border border-border text-center max-w-3xl mx-auto">
+          <h3 className="text-2xl font-display font-bold mb-3 text-black">
             Seja um parceiro Limel
           </h3>
-          <p className="text-primary-foreground/80 mb-6">
+          <p className="text-black/70 mb-6">
             Mais do que um fornecedor, buscamos ser um parceiro estratégico de crescimento para o seu negócio. Produtos com boa margem de lucro e demanda constante durante o ano todo.
           </p>
           <a
