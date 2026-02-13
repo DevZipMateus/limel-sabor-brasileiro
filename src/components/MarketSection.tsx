@@ -21,7 +21,7 @@ const MarketSection = () => {
     <section
       id="mercado"
       className="relative py-12 sm:py-16 md:py-20"
-      style={{ backgroundImage: `url(${marketBg})`, backgroundSize: "cover", backgroundPosition: "center" }}
+      style={{ backgroundImage: `url(${marketBg})`, backgroundSize: "cover", backgroundPosition: "center", backgroundAttachment: "fixed" }}
     >
       <div className="absolute inset-0 bg-primary/85" />
       <div className="container mx-auto px-5 sm:px-6 relative z-10">
