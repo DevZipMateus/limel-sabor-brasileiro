@@ -14,7 +14,7 @@ const AboutSection = () => {
     <section
       id="sobre"
       className="relative py-20"
-      style={{ backgroundImage: `url(${aboutBg})`, backgroundSize: "cover", backgroundPosition: "center" }}
+      style={{ backgroundImage: `url(${aboutBg})`, backgroundSize: "cover", backgroundPosition: "center", backgroundAttachment: "fixed" }}
     >
       <div className="absolute inset-0 bg-white/90" />
       <div className="container mx-auto px-4 relative z-10">
