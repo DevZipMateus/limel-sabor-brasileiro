@@ -5,7 +5,7 @@ const HeroSection = () => {
   return (
     <section
       id="inicio"
-      className="relative min-h-[70vh] sm:min-h-[75vh] md:min-h-[85vh] flex items-center pt-16 md:pt-20 pb-12 md:pb-0 overflow-hidden"
+      className="relative min-h-[85vh] sm:min-h-[90vh] md:min-h-screen flex items-center pt-16 md:pt-20 pb-12 md:pb-0 overflow-hidden"
       style={{
         backgroundImage: `url(${heroBg})`,
         backgroundSize: "cover",
