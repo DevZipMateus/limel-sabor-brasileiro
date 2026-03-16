@@ -2,9 +2,11 @@ import { useEffect } from "react";
 import { useLocation } from "react-router-dom";
 import Header from "@/components/Header";
 import HeroSection from "@/components/HeroSection";
-import AboutSection from "@/components/AboutSection";
 import ProductsSection from "@/components/ProductsSection";
-import MarketSection from "@/components/MarketSection";
+import ResellerSection from "@/components/ResellerSection";
+import WhyChooseSection from "@/components/WhyChooseSection";
+import TestimonialsSection from "@/components/TestimonialsSection";
+import AboutSection from "@/components/AboutSection";
 import ContactSection from "@/components/ContactSection";
 import Footer from "@/components/Footer";
 import WhatsAppButton from "@/components/WhatsAppButton";
@@ -20,13 +22,16 @@ const Index = () => {
       }, 100);
     }
   }, [location.hash]);
+
   return (
     <div className="min-h-screen bg-background">
       <Header />
       <HeroSection />
-      <AboutSection />
       <ProductsSection />
-      <MarketSection />
+      <ResellerSection />
+      <WhyChooseSection />
+      <TestimonialsSection />
+      <AboutSection />
       <ContactSection />
       <Footer />
       <WhatsAppButton />
