@@ -10,16 +10,16 @@ const Footer = () => {
               <img src={logo} alt="Logo Sorvetes Limel" className="h-12 w-12 sm:h-16 sm:w-16 object-contain" />
             </div>
             <p className="text-background/70 text-xs sm:text-sm leading-relaxed">
-              Sorvetes e açaí artesanais com qualidade, sabor e preço justo para famílias, comerciantes e parceiros.
+              Fábrica de sorvetes e açaí em Osasco – SP. Qualidade, sabor e preço justo desde 2008. Fornecedor de sorvete para lojistas, mercados e revendedores.
             </p>
           </div>
           <div>
             <h3 className="font-display font-bold text-base sm:text-lg mb-3 sm:mb-4">Navegação</h3>
             <nav className="flex flex-col gap-1.5 sm:gap-2">
               <a href="#inicio" className="text-background/70 hover:text-background transition-colors text-xs sm:text-sm">Início</a>
-              <a href="#sobre" className="text-background/70 hover:text-background transition-colors text-xs sm:text-sm">Sobre nós</a>
               <a href="#produtos" className="text-background/70 hover:text-background transition-colors text-xs sm:text-sm">Produtos</a>
-              <a href="#mercado" className="text-background/70 hover:text-background transition-colors text-xs sm:text-sm">Mercado</a>
+              <a href="#revendedores" className="text-background/70 hover:text-background transition-colors text-xs sm:text-sm">Revendedores</a>
+              <a href="#sobre" className="text-background/70 hover:text-background transition-colors text-xs sm:text-sm">Sobre nós</a>
               <a href="#contato" className="text-background/70 hover:text-background transition-colors text-xs sm:text-sm">Contato</a>
             </nav>
           </div>
@@ -29,7 +29,7 @@ const Footer = () => {
               <a href="https://wa.me/5511965328237" target="_blank" rel="noopener noreferrer" className="hover:text-background transition-colors">(11) 96532-8237</a>
               <a href="https://wa.me/5511954208127" target="_blank" rel="noopener noreferrer" className="hover:text-background transition-colors">(11) 95420-8127</a>
               <a href="mailto:jefferson.limel@gmail.com" className="hover:text-background transition-colors break-all">jefferson.limel@gmail.com</a>
-              <p>Av. Benedito Alves Turíbio, 40</p>
+              <p>Osasco – SP</p>
               <p>CNPJ: 10.491.537/0001-55</p>
             </div>
           </div>
