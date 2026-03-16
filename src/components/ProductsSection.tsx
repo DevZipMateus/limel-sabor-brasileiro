@@ -1,29 +1,26 @@
-import banner300ml from "@/assets/banner-300ml.jpg";
-import banner250ml from "@/assets/banner-250ml.jpg";
-import banner2litros from "@/assets/banner-2litros.jpg";
-import banner2litrosMesclas from "@/assets/banner-2litros-mesclas.jpg";
+import productPicoles from "@/assets/product-picoles.jpg";
+import productSorvetes from "@/assets/product-sorvetes.jpg";
+import productAcai from "@/assets/product-acai.jpg";
 import { useScrollReveal } from "@/hooks/use-scroll-reveal";
 
 const products = [
   {
-    name: "Pote 300ml",
-    image: banner300ml,
-    alt: "Banner sorvetes Limel pote 300ml",
+    name: "Picolés",
+    desc: "Cremosos e de frutas para todos os gostos.",
+    image: productPicoles,
+    alt: "Picolés coloridos de frutas",
   },
   {
-    name: "Pote 250ml",
-    image: banner250ml,
-    alt: "Banner sorvetes Limel pote 250ml",
+    name: "Sorvetes",
+    desc: "Sorvetes de massa em diversos sabores.",
+    image: productSorvetes,
+    alt: "Sorvetes de massa variados",
   },
   {
-    name: "2 Litros",
-    image: banner2litros,
-    alt: "Banner sorvetes Limel pote 2 litros",
-  },
-  {
-    name: "2 Litros Mesclados",
-    image: banner2litrosMesclas,
-    alt: "Banner sorvetes Limel pote 2 litros mesclados",
+    name: "Açaí",
+    desc: "Açaí cremoso e irresistível.",
+    image: productAcai,
+    alt: "Açaí bowl com granola e frutas",
   },
 ];
 
@@ -43,22 +40,23 @@ const ProductsSection = () => {
           </p>
         </div>
 
-        <div ref={grid.ref} className="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-6 max-w-5xl mx-auto">
+        <div ref={grid.ref} className="grid sm:grid-cols-3 gap-4 sm:gap-6 max-w-4xl mx-auto">
           {products.map((p, i) => (
             <div
               key={p.name}
               className={`group bg-card border border-border rounded-2xl overflow-hidden hover:shadow-xl hover:-translate-y-1 transition-all duration-300 ${grid.isVisible ? "animate-scale-up" : "opacity-0"}`}
-              style={{ animationDelay: `${i * 0.12}s` }}
+              style={{ animationDelay: `${i * 0.15}s` }}
             >
-              <div className="overflow-hidden">
+              <div className="h-48 sm:h-52 overflow-hidden">
                 <img
                   src={p.image}
                   alt={p.alt}
-                  className="w-full h-auto object-cover group-hover:scale-105 transition-transform duration-500"
+                  className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
                 />
               </div>
-              <div className="p-3 sm:p-4 text-center">
-                <h3 className="font-display font-bold text-foreground text-lg">{p.name}</h3>
+              <div className="p-4 sm:p-5 text-center">
+                <h3 className="font-display font-bold text-foreground text-lg mb-1">{p.name}</h3>
+                <p className="text-sm text-muted-foreground">{p.desc}</p>
               </div>
             </div>
           ))}
