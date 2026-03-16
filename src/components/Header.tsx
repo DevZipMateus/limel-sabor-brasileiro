@@ -55,7 +55,7 @@ const Header = () => {
           }}
           className="flex items-center gap-2"
         >
-          <img src={logo} alt="Logo Sorvetes Limel" className="h-8 sm:h-10 md:h-12 w-auto brightness-0 invert" />
+          <img src={logo} alt="Logo Sorvetes Limel" className="h-8 sm:h-10 md:h-12 w-auto" />
         </a>
 
         <nav className="hidden md:flex items-center gap-5 lg:gap-8">
