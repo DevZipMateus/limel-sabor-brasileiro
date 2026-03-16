@@ -29,7 +29,7 @@ const ResellerSection = () => {
         </div>
 
         <div ref={content.ref} className={`max-w-3xl mx-auto transition-all duration-700 ${content.isVisible ? "animate-fade-up" : "opacity-0"}`}>
-          <div className="flex flex-wrap justify-center gap-3 sm:gap-4 mb-8">
+          <div className="grid grid-cols-2 sm:grid-cols-4 gap-3 sm:gap-4 mb-8">
             {benefits.map((b, i) => (
               <div
                 key={b}
